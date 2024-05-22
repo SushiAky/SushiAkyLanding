@@ -110,6 +110,19 @@ const menu = useMenuStore()
             <GridMenu title="Dog Holl" :menus="menu.dogHoll" />
             <GridMenu title="Complementos" :menus="menu.complementos" />
         </div>
+
+        <div class="flex justify-center pb-16 bg-white">
+            <a id="Contato" />
+            <div class="rounded-xl border border-gray-200 shadow-lg p-8 flex justify-center flex-col gap-4 text-black">
+                <p class="text-xl lg:text-2xl font-bold">Confira nosso Instagram</p>
+                <a href="https://instagram.com/sushiakyy/" target="_blank">
+                    <div class="flex justify-center">
+                        <InstagramIcon class="h-16 w-16" />
+                    </div>
+                    <p class="text-center text-lg mt-2">@sushiakyy</p>
+                </a>
+            </div>
+        </div>
     </NuxtLayout>
 </template>
 

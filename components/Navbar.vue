@@ -132,9 +132,12 @@ onBeforeUnmount(() => {
                     </li>
 
                     <li>
-                        <button class="block py-2 pl-3 text-sm pr-4 rounded lg:border-0 lg:py-5 text-white uppercase">
-                            Contato
-                        </button>
+                        <a href="#Contato">
+                            <button
+                                class="block py-2 pl-3 text-sm pr-4 rounded lg:border-0 lg:py-5 text-white uppercase">
+                                Contato
+                            </button>
+                        </a>
                     </li>
 
                     <li class="hidden lg:flex">
