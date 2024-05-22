@@ -6,7 +6,7 @@ import CloseIcon from '@/components/Icons/CloseIcon.vue'
 import { ref, defineProps } from 'vue'
 import { useCartStore } from '../stores/cart.js';
 
-const props = defineProps(['title', 'menus'])
+const props = defineProps(['location', 'title', 'menus'])
 
 const cartStore = useCartStore()
 
@@ -28,6 +28,7 @@ const addToCart = (product) => {
 </script>
 
 <template>
+    <a :id="location" />
     <div class="pb-14 lg:pb-24">
         <div class="my-4 ml-6 text-left">
             <p class="text-xl font-bold text-black lg:text-3xl text-transparent bg-clip-text bg-contain bg-text-title">

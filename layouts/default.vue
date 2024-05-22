@@ -1,7 +1,7 @@
 <template>
     <Navbar />
 
-    <div class="antialised overflow-x-hidden">
+    <div class="antialised">
         <slot />
     </div>
 

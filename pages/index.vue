@@ -6,6 +6,15 @@ import { useMenuStore } from '@/stores/menu.js'
 
 const menu = useMenuStore()
 
+const filteredItems = ref([]);
+const search = ref('')
+
+const handleFilteredItems = (newFilteredItems, searchQuery) => {
+    console.log(newFilteredItems, searchQuery);
+    filteredItems.value = newFilteredItems;
+    search.value = searchQuery
+};
+
 </script>
 
 <template>
@@ -62,55 +71,63 @@ const menu = useMenuStore()
             </div>
         </div>
 
-        <div class="bg-white py-16">
-            <a id="Destaques" />
-            <div class="px-4 pb-8 flex justify-between items-center">
-                <div class="w-14 h-4 lg:w-20 lg:h-7 rounded-full bg-text-title bg-cover"></div>
-                <p
-                    class="text-center text-3xl lg:text-5xl font-black text-transparent bg-clip-text bg-contain bg-text-title">
-                    Destaques
-                </p>
-                <p class="w-14 lg:w-20"></p>
+        <MenuSection @update:filteredItems="handleFilteredItems" />
+
+        <div v-if="!search">
+            <div class="bg-white py-16">
+                <a id="Destaques" />
+                <div class="px-4 pb-8 flex justify-between items-center">
+                    <div class="w-14 h-4 lg:w-20 lg:h-7 rounded-full bg-text-title bg-cover"></div>
+                    <p
+                        class="text-center text-3xl lg:text-5xl font-black text-transparent bg-clip-text bg-contain bg-text-title">
+                        Destaques
+                    </p>
+                    <p class="w-14 lg:w-20"></p>
+                </div>
+
+                <div class="pb-10 grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <MostRequested :menus="menu.destaques" />
+                </div>
+
             </div>
 
-            <div class="pb-10 grid grid-cols-1 lg:grid-cols-3 gap-8">
-                <MostRequested :menus="menu.destaques" />
-            </div>
+            <div class="bg-white py-16">
+                <a id="Cardapio" />
+                <div class="px-4 pb-8 flex justify-between items-center">
+                    <p class="w-14 lg:w-20"></p>
+                    <p
+                        class="text-center text-3xl lg:text-5xl font-black text-transparent bg-clip-text bg-contain bg-text-title">
+                        Nosso Cardápio
+                    </p>
+                    <div class="w-14 h-4 lg:w-20 lg:h-7 rounded-full bg-text-title bg-cover"></div>
+                </div>
 
+                <GridMenu location="Combos" title="Combos a parti de 1 Real a peça !!" :menus="menu.combos" />
+                <GridMenu location="CombosPlus" title="Combo Plus da Hora !!" :menus="menu.comboPlus" />
+                <GridMenu location="Temakis" title="Temakis *" :menus="menu.temakis" />
+                <GridMenu location="HotHoll" title="Hot Holl" :menus="menu.hots" />
+                <GridMenu location="Promo" title="Promo !!!" :menus="menu.promo" />
+                <GridMenu location="Jhow" title="Jhow (4 unidades)" :menus="menu.jhow" />
+                <GridMenu location="Niguiri" title="Niguiri (5 unidades)" :menus="menu.niguiris" />
+                <GridMenu location="Sashimi" title="Sashimi (5 unidades)" :menus="menu.sashimis" />
+                <GridMenu location="Uramaki" title="Uramaki (4 Unidades)" :menus="menu.urumakis" />
+                <GridMenu location="Hossomaki" title="Hossomaki (4 Unidades)" :menus="menu.hossomakis" />
+                <GridMenu location="CombosEspeciais" title="Combos Especial" :menus="menu.combosEspeciais" />
+
+                <!--Combinado-->
+                <MenuCombined location="Combinado" title="Combinado Aky" :menus="menu.combinadoAky" />
+                <GridMenu location="Yakisoba" title="Yaskisoba" :menus="menu.yakisobas" />
+
+                <GridMenu location="BurgueSushi" title="Burgue Sushi" :menus="menu.burgerSushi" />
+                <GridMenu location="SushiGlass" title="Sushi Glass" :menus="menu.sushiGlass" />
+                <GridMenu location="DogHoll" title="Dog Holl" :menus="menu.dogHoll" />
+                <GridMenu location="Bebidas" title="Bebidas" :menus="menu.bebidas" />
+                <GridMenu location="Complementos" title="Complementos" :menus="menu.complementos" />
+            </div>
         </div>
 
-        <div class="bg-white py-16">
-            <a id="Cardapio" />
-            <div class="px-4 pb-8 flex justify-between items-center">
-                <p class="w-14 lg:w-20"></p>
-                <p
-                    class="text-center text-3xl lg:text-5xl font-black text-transparent bg-clip-text bg-contain bg-text-title">
-                    Nosso Cardápio
-                </p>
-                <div class="w-14 h-4 lg:w-20 lg:h-7 rounded-full bg-text-title bg-cover"></div>
-            </div>
-
-            <GridMenu title="Combos a parti de 1 Real a peça !!" :menus="menu.combos" />
-            <GridMenu title="Combo Plus da Hora !!" :menus="menu.comboPlus" />
-            <GridMenu title="Temakis *" :menus="menu.temakis" />
-            <GridMenu title="Hot Holl" :menus="menu.hots" />
-            <GridMenu title="Promo !!!" :menus="menu.promo" />
-            <GridMenu title="Jhow (4 unidades)" :menus="menu.jhow" />
-            <GridMenu title="Niguiri (5 unidades)" :menus="menu.niguiris" />
-            <GridMenu title="Sashimi (5 unidades)" :menus="menu.sashimis" />
-            <GridMenu title="Uramaki (4 Unidades)" :menus="menu.urumakis" />
-            <GridMenu title="Hossomaki (4 Unidades)" :menus="menu.hossomakis" />
-            <GridMenu title="Combos Especial" :menus="menu.combosEspeciais" />
-
-            <!--Combinado-->
-            <MenuCombined title="Combinado Aky" :menus="menu.combinadoAky" />
-            <GridMenu title="Yaskisoba" :menus="menu.yakisobas" />
-
-            <GridMenu title="Burgue Sushi" :menus="menu.burgerSushi" />
-            <GridMenu title="Sushi Glass" :menus="menu.sushiGlass" />
-            <GridMenu title="Dog Holl" :menus="menu.dogHoll" />
-            <GridMenu title="Bebidas" :menus="menu.bebidas" />
-            <GridMenu title="Complementos" :menus="menu.complementos" />
+        <div v-else>
+            <GridMenu :title="'Buscar: ' + search" :menus="filteredItems" />
         </div>
 
         <div class="flex justify-center pb-16 bg-white">
