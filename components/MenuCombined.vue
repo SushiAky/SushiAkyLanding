@@ -4,7 +4,7 @@ import DescriptionIcon from './Icons/DescriptionIcon.vue';
 import CloseIcon from './Icons/CloseIcon.vue';
 import { ref } from 'vue';
 
-const props = defineProps(['title', 'menus'])
+const props = defineProps(['location', 'title', 'menus'])
 
 const addProduct = ref(false)
 
@@ -27,6 +27,7 @@ const setOptions = (menu) => {
 </script>
 
 <template>
+    <a :id="location" />
     <section class="pb-14 lg:pb-24">
         <div class="my-4 ml-6 text-left">
             <h2 class="text-xl font-bold text-black lg:text-3xl">
