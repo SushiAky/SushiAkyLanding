@@ -783,17 +783,6 @@ export const useMenuStore = defineStore('menu', () => {
         },
     ]
 
-
-
-
-
-
-
-
-
-
-
-
     const combinadoAky = [
         {
             id: 90,
@@ -867,6 +856,33 @@ export const useMenuStore = defineStore('menu', () => {
         { id: 12, name: 'Hot Camarão', price: "13.90" },
     ]
 
+    const destaques = [
+        {
+            id: 7,
+            name: 'Combo Sushiaki 40 peças',
+            description: '2 Hossomaki Salmão, 2 Uramaki Salmão, 6 Uramaki Atum , 6 Uramaki Skin, 6 Hossomaki Kani, 4 Uramaki Kani, 4 Hossomaki de Atum 5 Hot Kani, 5 Hot Salmão.',
+            price: '41.90',
+            type: 'Combos',
+            image: 'https://static.ifood-static.com.br/image/upload/t_medium/pratos/6aa5ff33-cb34-4615-82f9-d81f3ef13bf8/202404202252_UC75_i.jpg',
+        },
+        {
+            id: 25,
+            name: 'Temaki Camarão Empanado',
+            description: 'Gohan, camarão, cream cheese e cebolinha, empanado com farinha especial e frito (180g).',
+            price: '28.90',
+            type: 'Temakis',
+            image: 'https://static.ifood-static.com.br/image/upload/t_medium/pratos/6aa5ff33-cb34-4615-82f9-d81f3ef13bf8/202404122252_ENX3_i.jpg',
+        },
+        {
+            id: 9,
+            name: 'Combo Sushiaki 30 peças',
+            description: '3 Niguiri Salmão, 3 Hossomaki Salmão, 4 Uramaki Salmão, 6 uramaki kani, 4 Uramaki skin, 4 Hossomaki Kani, 6 Hot Roll.',
+            price: '37.90',
+            type: 'Combos',
+            image: 'https://static.ifood-static.com.br/image/upload/t_medium/pratos/6aa5ff33-cb34-4615-82f9-d81f3ef13bf8/202404202252_UC75_i.jpg',
+        },
+    ]
+
     return {
         combos,
         comboPlus,
@@ -885,6 +901,8 @@ export const useMenuStore = defineStore('menu', () => {
         complementos,
 
         combinadoAky,
-        combinadoItems
+        combinadoItems,
+
+        destaques
     }
 })
