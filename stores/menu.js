@@ -882,6 +882,118 @@ export const useMenuStore = defineStore('menu', () => {
             image: 'https://static.ifood-static.com.br/image/upload/t_medium/pratos/6aa5ff33-cb34-4615-82f9-d81f3ef13bf8/202404202252_UC75_i.jpg',
         },
     ]
+    
+    const yakisobas = [
+        {
+            id: 69,
+            name: 'Yakisoba Frango 500g',
+            description: 'Yakisoba, Frango 500g + Coca Cola.',
+            price: '31.90',
+            type: 'Yakisoba',
+            image: 'https://static.ifood-static.com.br/image/upload/t_medium/pratos/0b7470e3-6031-40bb-99ca-94e009621556/202310080225_TND6_i.jpg',
+            location: 'Yakisoba'
+        },
+        {
+            id: 70,
+            name: 'Yakisoba carne 700g',
+            description: 'Macarrão Oriental, Carne bovina e legumes e molho.',
+            price: '37.90',
+            type: 'Yakisoba',
+            image: 'https://static.ifood-static.com.br/image/upload/t_medium/pratos/0b7470e3-6031-40bb-99ca-94e009621556/202310080237_76T6_i.jpg',
+        },
+        {
+            id: 71,
+            name: 'Yakisoba Clássico 700g',
+            description: 'Macarrão Oriental, Carne bovina, Frango e legumes e molho.',
+            price: '38.90',
+            type: 'Yakisoba',
+            image: 'https://static.ifood-static.com.br/image/upload/t_medium/pratos/0b7470e3-6031-40bb-99ca-94e009621556/202310080240_68KR_i.jpg',
+        },
+        {
+            id: 72,
+            name: 'Yakisoba Camarão 700g',
+            description: 'Macarrão Oriental, Camarão legumes e molho.',
+            price: '42.90',
+            type: 'Yakisoba',
+            image: 'https://static.ifood-static.com.br/image/upload/t_medium/pratos/0b7470e3-6031-40bb-99ca-94e009621556/202310080230_5V1F_i.jpg',
+        },
+        {
+            id: 73,
+            name: 'Yakisoba especial 700g',
+            description: 'Macarrão Oriental, Carne bovina, Frango, Camarão e legumes e molho.',
+            price: '49.90',
+            type: 'Yakisoba',
+            image: 'https://static.ifood-static.com.br/image/upload/t_medium/pratos/0b7470e3-6031-40bb-99ca-94e009621556/202310080241_GS7D_i.jpg',
+        },
+    ]
+
+    const bebidas = [
+        {
+            id: 106,
+            name: 'Coca Comum 350ml',
+            description: '',
+            price: '5.90',
+            type: 'Bebidas',
+            image: 'https://static.ifood-static.com.br/image/upload/t_medium/pratos/0b7470e3-6031-40bb-99ca-94e009621556/202310111637_20DF_i.jpg',
+            location: 'Bebidas'
+        },
+        {
+            id: 107,
+            name: 'Coca Zero 350ml',
+            description: '',
+            price: '5.90',
+            type: 'Bebidas',
+            image: 'https://static.ifood-static.com.br/image/upload/t_medium/pratos/0b7470e3-6031-40bb-99ca-94e009621556/202310111639_51VO_i.jpg',
+        },
+        {
+            id: 108,
+            name: 'Fanta Laranja 350ml',
+            description: '',
+            price: '5.90',
+            type: 'Bebidas',
+            image: 'https://static.ifood-static.com.br/image/upload/t_medium/pratos/0b7470e3-6031-40bb-99ca-94e009621556/202310111640_6CWG_i.jpg',
+        },
+        {
+            id: 109,
+            name: 'Fanta Uva 350ml',
+            description: '',
+            price: '5.90',
+            type: 'Bebidas',
+            image: 'https://static.ifood-static.com.br/image/upload/t_medium/pratos/0b7470e3-6031-40bb-99ca-94e009621556/202310111841_IEP4_i.jpg',
+        },
+        {
+            id: 110,
+            name: 'Guaraná Antarctica 350ml',
+            description: '',
+            price: '5.90',
+            type: 'Bebidas',
+            image: 'https://static.ifood-static.com.br/image/upload/t_medium/pratos/0b7470e3-6031-40bb-99ca-94e009621556/202310111751_52OF_i.jpg',
+        },
+        {
+            id: 111,
+            name: 'Guaraná Antarctica Zero 350ml',
+            description: '',
+            price: '5.90',
+            type: 'Bebidas',
+            image: 'https://static.ifood-static.com.br/image/upload/t_medium/pratos/0b7470e3-6031-40bb-99ca-94e009621556/202310111753_S052_i.jpg',
+        },
+        {
+            id: 112,
+            name: 'Garrafa Água Mineral 500 ml sem gás',
+            description: '',
+            price: '3.00',
+            type: 'Bebidas',
+            image: 'https://static.ifood-static.com.br/image/upload/t_medium/pratos/0b7470e3-6031-40bb-99ca-94e009621556/202310111800_MPIC_i.jpg',
+        },
+        {
+            id: 113,
+            name: 'Garrafa Água Mineral 500 ml com gás',
+            description: '',
+            price: '5.90',
+            type: 'Bebidas',
+            image: 'https://static.ifood-static.com.br/image/upload/t_medium/pratos/0b7470e3-6031-40bb-99ca-94e009621556/202310111800_MPIC_i.jpg',
+        },
+    ]
 
     return {
         combos,
@@ -899,6 +1011,9 @@ export const useMenuStore = defineStore('menu', () => {
         sushiGlass,
         dogHoll,
         complementos,
+        
+        yakisobas,
+        bebidas,
 
         combinadoAky,
         combinadoItems,

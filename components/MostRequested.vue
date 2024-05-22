@@ -1,4 +1,5 @@
 <script setup>
+import ConfirmIcon from './Icons/ConfirmIcon.vue';
 import { useCartStore } from '../stores/cart.js';
 import { ref, defineProps } from 'vue'
 

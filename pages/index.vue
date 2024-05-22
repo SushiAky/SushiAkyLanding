@@ -104,10 +104,12 @@ const menu = useMenuStore()
 
             <!--Combinado-->
             <MenuCombined title="Combinado Aky" :menus="menu.combinadoAky" />
+            <GridMenu title="Yaskisoba" :menus="menu.yakisobas" />
 
             <GridMenu title="Burgue Sushi" :menus="menu.burgerSushi" />
             <GridMenu title="Sushi Glass" :menus="menu.sushiGlass" />
             <GridMenu title="Dog Holl" :menus="menu.dogHoll" />
+            <GridMenu title="Bebidas" :menus="menu.bebidas" />
             <GridMenu title="Complementos" :menus="menu.complementos" />
         </div>
 
