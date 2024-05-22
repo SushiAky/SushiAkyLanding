@@ -181,7 +181,7 @@ onBeforeUnmount(() => {
 
                                 <div class="flex justify-end mt-2 lg:mt-1 gap-2">
                                     <p>R${{ product.price }}</p>
-                                    <button class="text-red-700" @click="cartStore.removeFromCart(product)">
+                                    <button class="text-black" @click="cartStore.removeFromCart(product)">
                                         <TrashIcon />
                                     </button>
                                 </div>
@@ -203,7 +203,7 @@ onBeforeUnmount(() => {
                             Continuar
                         </button>
                         <button @click="modalFormProduct = false"
-                            class="py-2 text-base tracking-tighter text-red-700 bg-white border border-red-700 rounded-full px-7">
+                            class="py-2 text-base tracking-tighter text-black bg-white border border-black rounded-full px-7">
                             Fechar
                         </button>
                     </div>
@@ -259,7 +259,7 @@ onBeforeUnmount(() => {
                             Continuar
                         </button>
                         <button @click="backToCart"
-                            class="py-2 text-base tracking-tighter text-red-700 bg-white border border-red-700 rounded-full px-7">
+                            class="py-2 text-base tracking-tighter text-black bg-white border border-black rounded-full px-7">
                             Voltar
                         </button>
                     </div>

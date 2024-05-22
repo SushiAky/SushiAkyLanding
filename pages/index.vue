@@ -4,7 +4,8 @@ import WhatsappIcon from '../components/Icons/WhatsappIcon.vue'
 
 import { useMenuStore } from '@/stores/menu.js'
 
-const calzones = useMenuStore().calzones
+const menu = useMenuStore()
+
 </script>
 
 <template>
@@ -165,7 +166,25 @@ const calzones = useMenuStore().calzones
                 <div class="w-14 h-4 lg:w-20 lg:h-7 rounded-full bg-text-title bg-cover"></div>
             </div>
 
-            <GridMenu title="Entradas" :menus="calzones" />
+            <GridMenu title="Combos a parti de 1 Real a peça !!" :menus="menu.combos" />
+            <GridMenu title="Combo Plus da Hora !!" :menus="menu.comboPlus" />
+            <GridMenu title="Temakis *" :menus="menu.temakis" />
+            <GridMenu title="Hot Holl" :menus="menu.hots" />
+            <GridMenu title="Promo !!!" :menus="menu.promo" />
+            <GridMenu title="Jhow (4 unidades)" :menus="menu.jhow" />
+            <GridMenu title="Niguiri (5 unidades)" :menus="menu.niguiris" />
+            <GridMenu title="Sashimi (5 unidades)" :menus="menu.sashimis" />
+            <GridMenu title="Uramaki (4 Unidades)" :menus="menu.urumakis" />
+            <GridMenu title="Hossomaki (4 Unidades)" :menus="menu.hossomakis" />
+            <GridMenu title="Combos Especial" :menus="menu.combosEspeciais" />
+
+            <!--Combinado-->
+            <MenuCombined title="Combinado Aky" :menus="menu.combinadoAky" />
+
+            <GridMenu title="Burgue Sushi" :menus="menu.burgerSushi" />
+            <GridMenu title="Sushi Glass" :menus="menu.sushiGlass" />
+            <GridMenu title="Dog Holl" :menus="menu.dogHoll" />
+            <GridMenu title="Complementos" :menus="menu.complementos" />
         </div>
     </NuxtLayout>
 </template>

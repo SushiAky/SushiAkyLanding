@@ -36,13 +36,15 @@ const addToCart = (product) => {
         </div>
 
         <div class="mx-3">
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-x-2 lg:gap-x-4 gap-y-5">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-2 lg:gap-x-4 gap-y-8">
 
                 <div v-for="menu in menus" :key="menu.id"
-                    class="relative flex flex-row items-center bg-white border border-gray-200 rounded-lg shadow md:max-w-xl">
-                    <div class="flex flex-col justify-between p-4 leading-normal w-7/12">
-                        <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 lg:text-2xl">{{ menu.name }}
+                    class="relative flex flex-row items-center bg-white border border-gray-200 rounded-lg shadow h-56 lg:h-64">
+                    <div class="flex flex-col justify-between p-4 leading-normal w-7/12"
+                        :class="{ 'w-7/12': menu.image, 'w-full': !menu.image }">
+                        <h5 class="mb-2 text-lg font-bold tracking-tight text-gray-900 lg:text-xl">{{ menu.name }}
                         </h5>
+                        <p class="text-gray-600 text-sm truncate">{{ menu.description }}</p>
                         <p class="mb-3 font-normal text-right text-red-700 lg:text-lg">R${{ menu.price }}</p>
                         <div>
                             <button @click="addToCart(menu)"
@@ -53,9 +55,9 @@ const addToCart = (product) => {
                         </div>
                     </div>
 
-                    <div class="relative w-5/12">
+                    <div v-if="menu.image" class="relative w-5/12">
                         <img @click="menu.showDescription = true"
-                            class="object-cover w-full rounded-none rounded-r-lg h-52 lg:h-64" :src="menu.image">
+                            class="object-cover w-full rounded-none rounded-r-lg h-56 lg:h-64" :src="menu.image">
                         <span :title="menu.description" @click="menu.showDescription = true"
                             class="absolute top-0 right-0 m-2 text-sm font-medium text-center text-white rounded-full">
                             <DescriptionIcon />
@@ -67,9 +69,7 @@ const addToCart = (product) => {
                             v-show="menu.showDescription">
                             <div class="relative w-4/5 lg:mx-auto lg:w-2/5">
                                 <div class="w-full pt-8 pb-10 bg-white rounded-md lg:pr-8 lg:pl-9">
-                                    <div class="flex justify-between">
-                                        <p class="text-2xl font-bold tracking-tight"></p>
-
+                                    <div class="flex justify-end">
                                         <button class="mr-5 lg:mr-5" @click="menu.showDescription = false">
                                             <CloseIcon />
                                         </button>
@@ -77,7 +77,7 @@ const addToCart = (product) => {
 
                                     <div class="mx-4 mt-3 lg:mx-10">
                                         <div class="text-center">
-                                            <p class="text-lg text-red-700 lg:text-xl">{{ menu.name }}</p>
+                                            <p class="text-lg text-black font-bold lg:text-xl">{{ menu.name }}</p>
                                         </div>
 
                                         <div class="mt-4">
@@ -86,17 +86,17 @@ const addToCart = (product) => {
                                         </div>
 
                                         <div class="mt-5">
-                                            <p class="text-black">{{ menu.description }}</p>
+                                            <p class="text-gray-600">{{ menu.description }}</p>
                                         </div>
                                     </div>
 
                                     <div class="flex flex-row-reverse mt-10 mr-5">
                                         <button type="submit" @click="addToCart(menu)"
-                                            class="py-2 ml-5 text-base tracking-tighter text-white bg-red-700 rounded-full px-7">
+                                            class="py-2 ml-5 text-base tracking-tighter text-white bg-black rounded-full px-7">
                                             Adicionar
                                         </button>
                                         <button @click="menu.showDescription = false"
-                                            class="py-2 text-base tracking-tighter text-red-700 bg-white border border-red-700 rounded-full px-7">
+                                            class="py-2 text-base tracking-tighter text-black bg-white border border-black rounded-full px-7">
                                             Fechar
                                         </button>
                                     </div>
