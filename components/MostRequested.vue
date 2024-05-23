@@ -1,5 +1,4 @@
 <script setup>
-import ConfirmIcon from './Icons/ConfirmIcon.vue';
 import { useCartStore } from '../stores/cart.js';
 import { ref, defineProps } from 'vue'
 
@@ -46,10 +45,10 @@ const addToCart = (product) => {
 
     <Transition>
         <div v-show="addProduct">
-            <div class="fixed z-50 bottom-4 right-4">
+            <div class="fixed z-50 bottom-4 right-20 lg:right-4">
                 <div
                     class="flex items-center w-full max-w-xs p-4 space-x-3 text-red-700 bg-white divide-x divide-black rounded-lg shadow-xl space-x">
-                    <ConfirmIcon />
+                    <IconsConfirmIcon />
                     <div class="pl-4 text-sm font-bold text-red-700">
                         <p>
                             Adicionado ao Carrinho!

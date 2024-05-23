@@ -1,5 +1,4 @@
 <script setup>
-import ConfirmIcon from '@/components/Icons/ConfirmIcon.vue'
 import CartIcon from '@/components/Icons/CartIcon.vue'
 import DescriptionIcon from '@/components/Icons/DescriptionIcon.vue'
 import CloseIcon from '@/components/Icons/CloseIcon.vue'
@@ -110,14 +109,13 @@ const addToCart = (product) => {
 
             </div>
         </div>
-    </div>
 
-    <Transition>
+        <Transition>
         <div v-show="addProduct">
-            <div class="fixed z-50 bottom-4 right-4">
+            <div class="fixed z-50 bottom-4 right-20 lg:right-4">
                 <div
                     class="flex items-center w-full max-w-xs p-4 space-x-3 text-red-700 bg-white divide-x divide-black rounded-lg shadow-xl space-x">
-                    <ConfirmIcon />
+                    <IconsConfirmIcon />
                     <div class="pl-4 text-sm font-bold text-red-700">
                         <p>
                             Adicionado ao Carrinho!
@@ -127,6 +125,7 @@ const addToCart = (product) => {
             </div>
         </div>
     </Transition>
+    </div>
 </template>
 
 <style>

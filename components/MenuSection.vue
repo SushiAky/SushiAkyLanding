@@ -75,7 +75,7 @@ onMounted(() => {
 </script>
 
 <template>
-    <div class="sticky top-16 w-full bg-white border-b z-20 px-4 lg:px-16 py-1.5 lg:py-3">
+    <div class="sticky top-0 lg:top-16 w-full bg-white border-b z-20 px-4 lg:px-16 py-1.5 lg:py-3">
         <div class="hidden lg:flex justify-between items-center">
             <div class="relative z-30 w-full lg:w-[31rem]">
                 <div class="flex justify-between px-5 hover:font-medium cursor-pointer" @click="open = !open">
@@ -125,7 +125,7 @@ onMounted(() => {
         </div>
     </div>
 
-    <div class="lg:hidden transition-all duration-300 w-full bg-white border-b z-10 px-4 lg:px-16 py-2 lg:py-3 sticky top-[134px]"
+    <div class="lg:hidden transition-all duration-300 w-full bg-white border-b z-10 px-4 lg:px-16 py-2 lg:py-3 sticky top-[70px]"
         :class="{ '-translate-y-full ease-in': !openSearch, '-translate-y-0 ease-out': openSearch }">
         <div class="flex gap-2 items-center">
             <IconsSearchIcon />
