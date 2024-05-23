@@ -53,7 +53,7 @@ const continueBuy = () => {
     let pedido = "Pedidos:\n";
 
     cartItems.forEach((item, index) => {
-        pedido += `${index + 1}. ${item.name}\n`;
+        pedido += `Item ${index + 1}. ${item.type} - ${item.name}\n`;
     });
 
     pedido += `\n${addressText}\n${paymentText}`;

@@ -8,7 +8,7 @@ export const useMenuStore = defineStore('menu', () => {
             name: 'Combo Sushiaky (30 peças)',
             description: '5 Niguiri Salmão , 5 Sashimi Salmão , 10 hossomaki Atum grelhado , 10 Hossomaki Salmão.',
             price: '64.90',
-            type: 'Combos',
+            type: 'Combo',
             image: 'https://static.ifood-static.com.br/image/upload/t_medium/pratos/6aa5ff33-cb34-4615-82f9-d81f3ef13bf8/202404102317_54A6_i.jpg',
         },
         {
@@ -16,7 +16,7 @@ export const useMenuStore = defineStore('menu', () => {
             name: 'Combo Sushiaky (28 peças)',
             description: '5 Sashimi Salmã , 2 Niguiri Salmão, 4 Niguiri kani empanado,5 Uramaki Skin, 4 Hossomaki Atum , 8 Hot Salmão crispy batata.',
             price: '43.90',
-            type: 'Combos',
+            type: 'Combo',
             image: 'https://static.ifood-static.com.br/image/upload/t_medium/pratos/6aa5ff33-cb34-4615-82f9-d81f3ef13bf8/202404112206_L018_i.jpg',
         },
         {
@@ -24,7 +24,7 @@ export const useMenuStore = defineStore('menu', () => {
             name: 'Combo Sushiaky salmao (25peças)',
             description: '10 hots Salmã ,10 Hossomaki Salmão, 5 Niguiri Salmão.',
             price: '45.90',
-            type: 'Combos',
+            type: 'Combo',
             image: 'https://static.ifood-static.com.br/image/upload/t_medium/pratos/6aa5ff33-cb34-4615-82f9-d81f3ef13bf8/202404112209_6EXT_i.jpg',
         },
         {
@@ -32,7 +32,7 @@ export const useMenuStore = defineStore('menu', () => {
             name: 'Combo Sushiaky (27 peças)',
             description: '5 Sashimi de Salmão , 2 Niguiri Salmão 2 jhow geleia , 4 Hossomaki Atum, 5 Uramaki Skin 4 Uramaki kani Crispy , 5 hots Salmão.',
             price: '52.90',
-            type: 'Combos',
+            type: 'Combo',
             image: 'https://static.ifood-static.com.br/image/upload/t_medium/pratos/6aa5ff33-cb34-4615-82f9-d81f3ef13bf8/202404112218_W050_i.jpg',
         },
         {
@@ -40,7 +40,7 @@ export const useMenuStore = defineStore('menu', () => {
             name: 'Combo Sushiaky (12 peças)',
             description: '5 Uramaki Skin , 5 Hossomaki Kani , 2 Niguiri Salmao.',
             price: '32.90',
-            type: 'Combos',
+            type: 'Combo',
             image: 'https://static.ifood-static.com.br/image/upload/t_medium/pratos/6aa5ff33-cb34-4615-82f9-d81f3ef13bf8/202404122349_8PHA_i.jpg',
         },
         {
@@ -48,7 +48,7 @@ export const useMenuStore = defineStore('menu', () => {
             name: 'Combo Sushiaky Executivo (12 peças)',
             description: '2 Hossomaki Salmão , 2 Niguiri Salmão , 2 Niguiri Kani Empanado ,2 Hossomaki Kani , 2 Hossomaki Atum grelhado , 2 Hot Salmão.',
             price: '34.90',
-            type: 'Combos',
+            type: 'Combo',
             image: 'https://static.ifood-static.com.br/image/upload/t_medium/pratos/6aa5ff33-cb34-4615-82f9-d81f3ef13bf8/202404132006_1R26_i.jpg',
         },
         {
@@ -56,7 +56,7 @@ export const useMenuStore = defineStore('menu', () => {
             name: 'Combo Sushiaki 40 peças',
             description: '2 Hossomaki Salmão, 2 Uramaki Salmão, 6 Uramaki Atum , 6 Uramaki Skin, 6 Hossomaki Kani, 4 Uramaki Kani, 4 Hossomaki de Atum 5 Hot Kani, 5 Hot Salmão.',
             price: '41.90',
-            type: 'Combos',
+            type: 'Combo',
             image: 'https://static.ifood-static.com.br/image/upload/t_medium/pratos/6aa5ff33-cb34-4615-82f9-d81f3ef13bf8/202404202252_UC75_i.jpg',
         },
         {
@@ -64,7 +64,7 @@ export const useMenuStore = defineStore('menu', () => {
             name: 'Combo Sushiaki 50 peças',
             description: '3 Niguiri Salmão, 5 Hossomaki de atum, 2 Uramaki Skin, 8 Uramaki de atum,10 Uramaki Kani,10 Hossomaki Kani, 5 Hot Salmão, 5 Hot Kani',
             price: '58.90',
-            type: 'Combos',
+            type: 'Combo',
             image: 'https://static.ifood-static.com.br/image/upload/t_medium/pratos/6aa5ff33-cb34-4615-82f9-d81f3ef13bf8/202404202252_UC75_i.jpg',
         },
         {
@@ -72,7 +72,7 @@ export const useMenuStore = defineStore('menu', () => {
             name: 'Combo Sushiaki 30 peças',
             description: '3 Niguiri Salmão, 3 Hossomaki Salmão, 4 Uramaki Salmão, 6 uramaki kani, 4 Uramaki skin, 4 Hossomaki Kani, 6 Hot Roll.',
             price: '37.90',
-            type: 'Combos',
+            type: 'Combo',
             image: 'https://static.ifood-static.com.br/image/upload/t_medium/pratos/6aa5ff33-cb34-4615-82f9-d81f3ef13bf8/202404202252_UC75_i.jpg',
         },
         {
@@ -80,7 +80,7 @@ export const useMenuStore = defineStore('menu', () => {
             name: 'Combo Sushiaki 18 peças',
             description: '6 Hot rolls,3 Uramaki Kani couve, 3 Uramaki kani, 3 Niguiri Skin, 3 Jhou Salmão frito.',
             price: '29.90',
-            type: 'Combos',
+            type: 'Combo',
             image: 'https://static.ifood-static.com.br/image/upload/t_medium/pratos/6aa5ff33-cb34-4615-82f9-d81f3ef13bf8/202404202252_UC75_i.jpg',
         },
         {
@@ -88,7 +88,7 @@ export const useMenuStore = defineStore('menu', () => {
             name: 'Combo Sushiaki 20 peças',
             description: '4 sashimis de salmão, 2 niguiris salmão, 2 uramakis salmão, 2 hossomakis salmão, 2 uramakis Kani, 3 Hot salmão, 3 Hot Kani.',
             price: '35.90',
-            type: 'Combos',
+            type: 'Combo',
             image: 'https://static.ifood-static.com.br/image/upload/t_medium/pratos/6aa5ff33-cb34-4615-82f9-d81f3ef13bf8/202404202252_UC75_i.jpg',
         },
     ];
@@ -166,7 +166,7 @@ export const useMenuStore = defineStore('menu', () => {
             name: 'Skin',
             description: 'Gohan, Skin batido com Cream Cheese e Cebolinha (180g).',
             price: '27.90',
-            type: 'Temakis',
+            type: 'Temaki',
             image: 'https://static.ifood-static.com.br/image/upload/t_medium/pratos/6aa5ff33-cb34-4615-82f9-d81f3ef13bf8/202404102352_1M4L_i.jpg',
         },
         {
@@ -174,7 +174,7 @@ export const useMenuStore = defineStore('menu', () => {
             name: 'Camarão Cozido',
             description: 'Gohan, camarão no vapor, Cream Cheese e Cebolinha (180g).',
             price: '33.90',
-            type: 'Temakis',
+            type: 'Temaki',
             image: 'https://static.ifood-static.com.br/image/upload/t_medium/pratos/6aa5ff33-cb34-4615-82f9-d81f3ef13bf8/202404102355_8LO2_i.jpg',
         },
         {
@@ -182,7 +182,7 @@ export const useMenuStore = defineStore('menu', () => {
             name: 'Salmão',
             description: 'Gohan, Salmão fresco, Cebolinha e Cream Cheese (180g).',
             price: '28.90',
-            type: 'Temakis',
+            type: 'Temaki',
             image: 'https://static.ifood-static.com.br/image/upload/t_medium/pratos/6aa5ff33-cb34-4615-82f9-d81f3ef13bf8/202404102357_F487_i.jpg',
         },
         {
@@ -190,7 +190,7 @@ export const useMenuStore = defineStore('menu', () => {
             name: 'Especial salmão com Camarão',
             description: 'Temaki de Salmão com camarão grelhado empanado com Farinha especial. Finalizado com creme cheese e cebolinha (180g).',
             price: '35.90',
-            type: 'Temakis',
+            type: 'Temaki',
             image: 'https://static.ifood-static.com.br/image/upload/t_medium/pratos/6aa5ff33-cb34-4615-82f9-d81f3ef13bf8/202404102358_172S_i.jpg',
         },
         {
@@ -198,7 +198,7 @@ export const useMenuStore = defineStore('menu', () => {
             name: 'Temaki Salmao Especial Empanado',
             description: 'Temaki de Salmão grelhado empanado com Farinha especial. Finalizado com creme cheese e cebolinha (180g).',
             price: '28.90',
-            type: 'Temakis',
+            type: 'Temaki',
             image: 'https://static.ifood-static.com.br/image/upload/t_medium/pratos/6aa5ff33-cb34-4615-82f9-d81f3ef13bf8/202404122251_NJDD_i.jpg',
         },
         {
@@ -206,7 +206,7 @@ export const useMenuStore = defineStore('menu', () => {
             name: 'Temaki Camarão Empanado',
             description: 'Gohan, camarão, cream cheese e cebolinha, empanado com farinha especial e frito (180g).',
             price: '28.90',
-            type: 'Temakis',
+            type: 'Temaki',
             image: 'https://static.ifood-static.com.br/image/upload/t_medium/pratos/6aa5ff33-cb34-4615-82f9-d81f3ef13bf8/202404122252_ENX3_i.jpg',
         },
         {
@@ -214,7 +214,7 @@ export const useMenuStore = defineStore('menu', () => {
             name: 'Temaki Salmao grelhado',
             description: 'Gohan, Salmão Grelhado fresco, Cebolinha e Cream Cheese (180g).',
             price: '27.90',
-            type: 'Temakis',
+            type: 'Temaki',
             image: 'https://static.ifood-static.com.br/image/upload/t_medium/pratos/6aa5ff33-cb34-4615-82f9-d81f3ef13bf8/202404122255_Y003_i.jpg',
         },
         {
@@ -222,7 +222,7 @@ export const useMenuStore = defineStore('menu', () => {
             name: 'Temaki de Kani',
             description: 'Temaki de kani, gohan, cream cheese e cebolinha.',
             price: '22.90',
-            type: 'Temakis',
+            type: 'Temaki',
             image: 'https://static.ifood-static.com.br/image/upload/t_medium/pratos/6aa5ff33-cb34-4615-82f9-d81f3ef13bf8/202404122256_0UTJ_i.jpg',
         },
         {
@@ -230,7 +230,7 @@ export const useMenuStore = defineStore('menu', () => {
             name: 'Temaki Kani Empanado',
             description: 'Temaki de kani em pedaços empanados na farinha panko, gohan, cebolinha e cream cheese.(180g).',
             price: '23.90',
-            type: 'Temakis',
+            type: 'Temaki',
             image: 'https://static.ifood-static.com.br/image/upload/t_medium/pratos/6aa5ff33-cb34-4615-82f9-d81f3ef13bf8/202404122257_NXMT_i.jpg',
         },
     ]
@@ -474,13 +474,13 @@ export const useMenuStore = defineStore('menu', () => {
         },
     ]
 
-    const urumakis = [
+    const uramakis = [
         {
             id: 56,
             name: 'Kani kama',
             description: 'Saboroso Gohan com gergelim e Kani Fresco com cream cheese.',
             price: '13.90',
-            type: 'Urumaki',
+            type: 'Uramaki',
             image: 'https://static.ifood-static.com.br/image/upload/t_medium/pratos/6aa5ff33-cb34-4615-82f9-d81f3ef13bf8/202404102320_5MC0_i.jpg',
         },
         {
@@ -488,7 +488,7 @@ export const useMenuStore = defineStore('menu', () => {
             name: 'Camarão',
             description: 'Saboroso Gohan com gergelim e Camaão Fresco com cream cheese.',
             price: '13.90',
-            type: 'Urumaki',
+            type: 'Uramaki',
             image: 'https://static.ifood-static.com.br/image/upload/t_medium/pratos/6aa5ff33-cb34-4615-82f9-d81f3ef13bf8/202404102335_KFJD_i.jpg',
         },
         {
@@ -496,7 +496,7 @@ export const useMenuStore = defineStore('menu', () => {
             name: 'Salmão',
             description: 'Saboroso Gohan com gergelim e Salmão Fresco com cream cheese.',
             price: '16.90',
-            type: 'Urumaki',
+            type: 'Uramaki',
             image: 'https://static.ifood-static.com.br/image/upload/t_medium/pratos/6aa5ff33-cb34-4615-82f9-d81f3ef13bf8/202404102336_234N_i.jpg',
         },
         {
@@ -504,7 +504,7 @@ export const useMenuStore = defineStore('menu', () => {
             name: 'Skin',
             description: 'Saboroso Gohan com gergelim e Skin Fresco com cream cheese.',
             price: '9.00',
-            type: 'Urumaki',
+            type: 'Uramaki',
             image: 'https://static.ifood-static.com.br/image/upload/t_medium/pratos/6aa5ff33-cb34-4615-82f9-d81f3ef13bf8/202404102337_6I28_i.jpg',
         },
         {
@@ -512,7 +512,7 @@ export const useMenuStore = defineStore('menu', () => {
             name: 'Especial de camarão',
             description: 'Saboroso Gohan com gergelim e Kani Fresco com pele se Salmao fresca por cima com cream cheese.',
             price: '17.90',
-            type: 'Urumaki',
+            type: 'Uramaki',
             image: 'https://static.ifood-static.com.br/image/upload/t_medium/pratos/6aa5ff33-cb34-4615-82f9-d81f3ef13bf8/202404102339_8048_i.jpg',
         },
         {
@@ -520,7 +520,7 @@ export const useMenuStore = defineStore('menu', () => {
             name: 'Especial de Salmão',
             description: 'Saboroso Gohan com gergelim e Salmao Fresco com pele se Salmao fresca por cima com cream cheese.',
             price: '18.90',
-            type: 'Urumaki',
+            type: 'Uramaki',
             image: 'https://static.ifood-static.com.br/image/upload/t_medium/pratos/6aa5ff33-cb34-4615-82f9-d81f3ef13bf8/202404112028_YNM8_i.jpg',
         },
         {
@@ -528,7 +528,7 @@ export const useMenuStore = defineStore('menu', () => {
             name: 'Especial de Salmão Flambado',
             description: 'Saboroso Gohan gergelim e Salmão Fresco com pele salmão Flambado por cima com creme cheese.',
             price: '19.90',
-            type: 'Urumaki',
+            type: 'Uramaki',
             image: 'https://static.ifood-static.com.br/image/upload/t_medium/pratos/6aa5ff33-cb34-4615-82f9-d81f3ef13bf8/202404112031_FHC1_i.jpg',
         },
         {
@@ -536,7 +536,7 @@ export const useMenuStore = defineStore('menu', () => {
             name: 'Mexicano Especial',
             description: 'Tarta de Salmão, cream cheese cebolinha, arroz e batata crispy.',
             price: '20.90',
-            type: 'Urumaki',
+            type: 'Uramaki',
             image: 'https://static.ifood-static.com.br/image/upload/t_medium/pratos/6aa5ff33-cb34-4615-82f9-d81f3ef13bf8/202404122306_27IV_i.jpg',
         },
         {
@@ -544,7 +544,7 @@ export const useMenuStore = defineStore('menu', () => {
             name: 'Salmao Grelhado',
             description: 'Saboroso Gohan com gergelim e Salmão grelhado Fresco com cream cheese.',
             price: '15.90',
-            type: 'Urumaki',
+            type: 'Uramaki',
             image: 'https://static.ifood-static.com.br/image/upload/t_medium/pratos/6aa5ff33-cb34-4615-82f9-d81f3ef13bf8/202404142229_S575_i.jpg',
         },
     ]
@@ -1004,7 +1004,7 @@ export const useMenuStore = defineStore('menu', () => {
         jhow,
         niguiris,
         sashimis,
-        urumakis,
+        uramakis,
         hossomakis,
         combosEspeciais,
         burgerSushi,

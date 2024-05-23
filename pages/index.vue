@@ -1,7 +1,4 @@
 <script setup>
-import InstagramIcon from '../components/Icons/InstagramIcon.vue';
-import WhatsappIcon from '../components/Icons/WhatsappIcon.vue'
-
 import { useMenuStore } from '@/stores/menu.js'
 
 const menu = useMenuStore()
@@ -10,7 +7,6 @@ const filteredItems = ref([]);
 const search = ref('')
 
 const handleFilteredItems = (newFilteredItems, searchQuery) => {
-    console.log(newFilteredItems, searchQuery);
     filteredItems.value = newFilteredItems;
     search.value = searchQuery
 };
@@ -28,7 +24,7 @@ const handleFilteredItems = (newFilteredItems, searchQuery) => {
                 <div class="flex flex-col gap-2 lg:gap-4">
                     <div>
                         <p
-                            class="text-5xl text-center lg:text-6xl tracking-tighter font-black text-transparent bg-clip-text bg-contain bg-text-home">
+                            class="text-5xl text-center lg:text-left lg:text-6xl tracking-tighter font-black text-transparent bg-clip-text bg-contain bg-text-home">
                             SushiAky</p>
                         <p class="text-lg text-center lg:text-left">Segunda a Domingo</p>
                         <p class="text-lg text-center lg:text-left">Rua Estado Do Rio, 1112 - Demócrito Rocha</p>
@@ -46,13 +42,13 @@ const handleFilteredItems = (newFilteredItems, searchQuery) => {
                         <div class="flex gap-2 justify-center lg:justify-start">
                             <a href="https://instagram.com/sushiakyy/" target="_blank">
                                 <button class="transition-all duration-200 hover:scale-110 fill-white">
-                                    <InstagramIcon class="h-12 w-12" />
+                                    <IconsInstagramIcon class="h-12 w-12" />
                                 </button>
                             </a>
 
                             <a href="https://api.whatsapp.com/send?phone=5585996325360" target="_blank">
                                 <button class="transition-all duration-200 hover:scale-110 fill-white">
-                                    <WhatsappIcon class="h-12 w-12" />
+                                    <IconsWhatsappIcon class="h-12 w-12" />
                                 </button>
                             </a>
 
@@ -117,7 +113,7 @@ const handleFilteredItems = (newFilteredItems, searchQuery) => {
                 <GridMenu location="Jhow" title="Jhow (4 unidades)" :menus="menu.jhow" />
                 <GridMenu location="Niguiri" title="Niguiri (5 unidades)" :menus="menu.niguiris" />
                 <GridMenu location="Sashimi" title="Sashimi (5 unidades)" :menus="menu.sashimis" />
-                <GridMenu location="Uramaki" title="Uramaki (4 Unidades)" :menus="menu.urumakis" />
+                <GridMenu location="Uramaki" title="Uramaki (4 Unidades)" :menus="menu.uramakis" />
                 <GridMenu location="Hossomaki" title="Hossomaki (4 Unidades)" :menus="menu.hossomakis" />
                 <GridMenu location="CombosEspeciais" title="Combos Especial" :menus="menu.combosEspeciais" />
 
@@ -143,7 +139,7 @@ const handleFilteredItems = (newFilteredItems, searchQuery) => {
                 <p class="text-xl text-center lg:text-2xl font-bold">Confira nosso Instagram</p>
                 <a href="https://instagram.com/sushiakyy/" target="_blank">
                     <div class="flex justify-center">
-                        <InstagramIcon class="h-16 w-16" />
+                        <IconsInstagramIcon class="h-16 w-16" />
                     </div>
                     <p class="text-center text-lg mt-2">@sushiakyy</p>
                 </a>

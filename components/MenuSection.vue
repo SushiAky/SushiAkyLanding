@@ -36,7 +36,7 @@ const allItems = computed(() => {
         ...menuStore.jhow,
         ...menuStore.niguiris,
         ...menuStore.sashimis,
-        ...menuStore.urumakis,
+        ...menuStore.uramakis,
         ...menuStore.hossomakis,
         ...menuStore.combosEspeciais,
         ...menuStore.burgerSushi,

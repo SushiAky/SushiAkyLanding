@@ -51,7 +51,6 @@ const closeModal = () => {
 }
 
 const increment = (option) => {
-    console.log(option)
     if (getCount(option) < props.quantity / 5 && totalQuantity.value < props.quantity / 5) {
         totalQuantity.value++
         const existingOptionIndex = selectedOptions.value.findIndex(item => item.name === option.name);
