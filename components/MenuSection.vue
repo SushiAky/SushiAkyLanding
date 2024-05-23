@@ -125,7 +125,7 @@ onMounted(() => {
         </div>
     </div>
 
-    <div class="lg:hidden transition-all duration-300 w-full bg-white border-b z-10 px-4 lg:px-16 py-2 lg:py-3 sticky top-[135px]"
+    <div class="lg:hidden transition-all duration-300 w-full bg-white border-b z-10 px-4 lg:px-16 py-2 lg:py-3 sticky top-[134px]"
         :class="{ '-translate-y-full ease-in': !openSearch, '-translate-y-0 ease-out': openSearch }">
         <div class="flex gap-2 items-center">
             <IconsSearchIcon />
