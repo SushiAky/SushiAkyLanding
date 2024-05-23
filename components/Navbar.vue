@@ -80,7 +80,7 @@ onBeforeUnmount(() => {
 
 <template>
     <nav :class="{ 'border-b border-b-black bg-black': isNavbarOpaque }"
-        class="fixed top-0 z-30 w-full transition duration-700 ease-in-out">
+        class="absolute lg:fixed top-0 z-30 w-full transition duration-700 ease-in-out">
         <!--, 'lg:-translate-y-full lg:ease-in': isHidden, 'lg:-translate-y-0 lg:ease-out': !isHidden-->
         <div class="flex flex-wrap items-center justify-between max-w-screen-2xl px-1 lg:px-4 py-3 lg:py-0 mx-auto">
 
@@ -93,15 +93,18 @@ onBeforeUnmount(() => {
             </NuxtLink>
 
             <div class="flex gap-1 items-center lg:order-2 lg:hidden text-white">
-                <button @click="modalFormProduct = true" class="text-white relative">
-                    <CartIcon />
+                <div class="fixed bottom-3 right-3">
+                    <button @click="modalFormProduct = true" v-if="cartStore.items.length > 0"
+                        class="text-white bg-black p-4 rounded-full relative">
+                        <CartIcon />
 
-                    <div class="absolute -right-2 -bottom-3">
-                        <p class="">
-                            {{ cartStore.items.length }}
-                        </p>
-                    </div>
-                </button>
+                        <div class="absolute right-2.5 bottom-1">
+                            <p class="">
+                                {{ cartStore.items.length }}
+                            </p>
+                        </div>
+                    </button>
+                </div>
 
                 <button @click="menu = !menu" :class="{ 'opened': menu }"
                     class="inline-flex items-center justify-center w-10 h-10 p-1 text-sm line-color-white rounded-lg lg:hidden transition duration-700 ease-in-out">

@@ -118,13 +118,10 @@ const setOptions = (menu) => {
         </div>
 
         <Transition>
-            <div v-show="addProduct" class="fixed bottom-4 right-4 z-50">
+            <div v-show="addProduct" class="fixed bottom-4 right-20 lg:right-4 z-50">
                 <div
                     class="flex items-center w-full max-w-xs p-4 space-x-3 text-red-700 bg-white divide-x divide-black rounded-lg shadow-xl space-x">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                    </svg>
+                    <IconsConfirmIcon />
                     <div class="pl-4 text-sm font-bold text-red-700">
                         <p>Adicionado ao Carrinho!</p>
                     </div>
