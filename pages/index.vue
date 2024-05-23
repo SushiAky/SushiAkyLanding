@@ -3,7 +3,7 @@ import { useMenuStore } from '@/stores/menu.js'
 
 const menu = useMenuStore()
 
-const filteredItems = ref([]);
+const filteredItems = ref([])
 const search = ref('')
 
 const handleFilteredItems = (newFilteredItems, searchQuery) => {
