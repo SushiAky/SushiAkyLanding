@@ -31,6 +31,7 @@ const handleFilteredItems = (newFilteredItems, searchQuery) => {
                             class="text-5xl text-center lg:text-6xl tracking-tighter font-black text-transparent bg-clip-text bg-contain bg-text-home">
                             SushiAky</p>
                         <p class="text-lg text-center lg:text-left">Segunda a Domingo</p>
+                        <p class="text-lg text-center lg:text-left">Rua Estado Do Rio, 1112 - Demócrito Rocha</p>
                         <p class="text-lg text-center lg:text-left">18:00 às 01:00</p>
                     </div>
 
@@ -52,6 +53,12 @@ const handleFilteredItems = (newFilteredItems, searchQuery) => {
                             <a href="https://api.whatsapp.com/send?phone=5585996325360" target="_blank">
                                 <button class="transition-all duration-200 hover:scale-110 fill-white">
                                     <WhatsappIcon class="h-12 w-12" />
+                                </button>
+                            </a>
+
+                            <a href="https://www.facebook.com/people/Sushi-aky/61559616506599/" target="_blank">
+                                <button class="transition-all duration-200 hover:scale-110 fill-white">
+                                    <IconsFacebookIcon class="h-12 w-12" />
                                 </button>
                             </a>
                         </div>
@@ -130,15 +137,25 @@ const handleFilteredItems = (newFilteredItems, searchQuery) => {
             <GridMenu :title="'Buscar: ' + search" :menus="filteredItems" />
         </div>
 
-        <div class="flex justify-center pb-16 bg-white">
+        <div class="flex flex-col lg:flex-row justify-center gap-4 pb-16 bg-white mx-4">
             <a id="Contato" />
             <div class="rounded-xl border border-gray-200 shadow-lg p-8 flex justify-center flex-col gap-4 text-black">
-                <p class="text-xl lg:text-2xl font-bold">Confira nosso Instagram</p>
+                <p class="text-xl text-center lg:text-2xl font-bold">Confira nosso Instagram</p>
                 <a href="https://instagram.com/sushiakyy/" target="_blank">
                     <div class="flex justify-center">
                         <InstagramIcon class="h-16 w-16" />
                     </div>
                     <p class="text-center text-lg mt-2">@sushiakyy</p>
+                </a>
+            </div>
+
+            <div class="rounded-xl border border-gray-200 shadow-lg p-8 flex justify-center flex-col gap-4 text-black">
+                <p class="text-xl text-center lg:text-2xl font-bold">Confira nosso Facebook</p>
+                <a href="https://www.facebook.com/people/Sushi-aky/61559616506599/" target="_blank">
+                    <div class="flex justify-center">
+                        <IconsFacebookIcon class="h-16 w-16" />
+                    </div>
+                    <p class="text-center text-lg mt-2">Sushi-aky</p>
                 </a>
             </div>
         </div>
