@@ -119,12 +119,15 @@ const handleFilteredItems = (newFilteredItems, searchQuery) => {
 
                 <!--Combinado-->
                 <MenuCombined location="Combinado" title="Combinado Aky" :menus="menu.combinadoAky" />
+                <!--
                 <GridMenu location="Yakisoba" title="Yaskisoba" :menus="menu.yakisobas" />
-
+                -->
                 <GridMenu location="BurgueSushi" title="Burgue Sushi" :menus="menu.burgerSushi" />
                 <GridMenu location="SushiGlass" title="Sushi Glass" :menus="menu.sushiGlass" />
                 <GridMenu location="DogHoll" title="Dog Holl" :menus="menu.dogHoll" />
+                <!--
                 <GridMenu location="Bebidas" title="Bebidas" :menus="menu.bebidas" />
+                -->
                 <GridMenu location="Complementos" title="Complementos" :menus="menu.complementos" />
             </div>
         </div>

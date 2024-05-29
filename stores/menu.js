@@ -883,6 +883,9 @@ export const useMenuStore = defineStore('menu', () => {
         },
     ]
     
+
+
+
     const yakisobas = [
         {
             id: 69,
@@ -1012,8 +1015,8 @@ export const useMenuStore = defineStore('menu', () => {
         dogHoll,
         complementos,
         
-        yakisobas,
-        bebidas,
+        //yakisobas,
+        //bebidas,
 
         combinadoAky,
         combinadoItems,
