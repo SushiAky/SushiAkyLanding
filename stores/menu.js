@@ -53,7 +53,7 @@ export const useMenuStore = defineStore('menu', () => {
         },
         {
             id: 7,
-            name: 'Combo Sushiaki 40 peças',
+            name: 'Combo Sushiaky 40 peças',
             description: '2 Hossomaki Salmão, 2 Uramaki Salmão, 6 Uramaki Atum , 6 Uramaki Skin, 6 Hossomaki Kani, 4 Uramaki Kani, 4 Hossomaki de Atum 5 Hot Kani, 5 Hot Salmão.',
             price: '41.90',
             type: 'Combo',
