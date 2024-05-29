@@ -43,8 +43,8 @@ const allItems = computed(() => {
         ...menuStore.sushiGlass,
         ...menuStore.dogHoll,
         ...menuStore.complementos,
-        ...menuStore.yakisobas,
-        ...menuStore.bebidas,
+        //...menuStore.yakisobas,
+        //...menuStore.bebidas,
         ...menuStore.combinadoAky,
     ];
 });
